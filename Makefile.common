@@ -1,0 +1,8 @@
+CFLAGS=-Wall -Werror -I/usr/include/lua5.2
+LDLIBS=-llua5.2
+
+ctest: main
+	./main
+
+clean:
+	-find . -name "*~" -or -name "main" -or -name "*.so" -or -name "*.o" | xargs rm
