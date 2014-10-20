@@ -1,5 +1,5 @@
 CFLAGS=-Wall -Werror -I/usr/include/lua5.2
-LDLIBS=-llua5.2
+LDLIBS=-llua5.2 -lm
 
 ctest: main
 	./main
